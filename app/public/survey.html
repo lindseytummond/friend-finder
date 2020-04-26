@@ -34,11 +34,11 @@
             <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="font-weight-bold">Name (required)</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex: John Smith">
+                  <input type="text" class="form-control" id="userName" placeholder="ex: John Smith">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1" class="font-weight-bold">Photo (required)</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <input type="file" class="form-control-file" id="userPhoto">
                 </div>
               </form>
           </div>
@@ -54,7 +54,7 @@
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="font-weight-bold">#1: Do you follow your brain more than your heart?</label>
                   <div class="radiobutton">
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline" id="q1">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                         <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
                       </div>
@@ -80,7 +80,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#2: If it were possible to colonize Mars while we are still alive, would you go to a colony?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q2">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -107,7 +107,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#3: Do people usually form the wrong idea of ​​you?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q3">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -134,7 +134,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#4: If you won the lottery, would you tell your family and friends?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q4">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -161,7 +161,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#5: Would you share your last piece of food with me?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q5">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -188,7 +188,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#6: Do you think your friends are at the same level of importance as your family?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q6">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -215,7 +215,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#7: Are you doing what you always wanted to do in your life?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q7">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -242,7 +242,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#8: Do you believe in life after death?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q8">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -269,7 +269,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#9: Do you think that living in this era is better than living 50 years ago?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q9">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -296,7 +296,7 @@
 
                 <div class="form-group">
                     <label for="formGroupExampleInput" class="font-weight-bold">#10: Do you believe in miracles?</label>
-                    <div class="radiobutton">
+                    <div class="radiobutton" id="q10">
                       <div class="form-check form-check-inline">
                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                           <label class="form-check-label" for="inlineCheckbox1">1 (strongly disagree)</label>
@@ -321,15 +321,30 @@
                 </div>
                 <br>
                 
-                <button type="submit" class="btn btn-primary" id="submit">SUBMIT</button>
+                <button type="submit" class="btn btn-primary" id="submitBtn">SUBMIT</button>
             </form>
         </div>
          
       
     </div>
+    <br>
+
+    <!-- Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+    The modal should display both the name and picture of the closest match. -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
 
 
-
+    <!-- footer links -->
     <br><br>
     <footer class="footer">
         <div class="container">
@@ -342,42 +357,75 @@
 </body>
 
 
-<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<!-- modal pop up -->
 <script type="text/javascript">
+
+// // Get the modal
+// var modal = document.getElementById("myModal");
+
+// // Get the button that opens the modal
+// var btn = document.getElementById("submitBtn");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks on the button, open the modal
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+
+// <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
   // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
   // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
   // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
   // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
-  $(".submit").on("click", function(event) {
+  $("#submitBtn").on("click", function(event) {
     event.preventDefault();
 
     // Here we grab the form elements
-    var newSurvey = {
-      name: $("#form-control").val().trim(),
-      photo: $("#form-control-file").val().trim(),
-      scores: $("#form-check-label").val().trim(),
+    var userInput = {
+      name: $("#userName").val().trim(),
+      photo: $("#userPhoto").val().trim(),
+      scores: [
+        $("#q1").val().trim(),
+        $("#q2").val().trim(),
+        $("#q3").val().trim(),
+        $("#q4").val().trim(),
+        $("#q5").val().trim(),
+        $("#q6").val().trim(),
+        $("#q7").val().trim(),
+        $("#q8").val().trim(),
+        $("#q9").val().trim(),
+        $("#q10").val().trim(),
+      ]
     };
 
-    console.log(newSurvey);
+    console.log(userInput);
 
     // This line is the magic. It"s very similar to the standard ajax function we used.
     // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
-    $.post("/api/friends", newSurvey,
+    $.post("/api/friends", userInput,
       function(data) {
 
-        // If a friend is available... tell user they have a friend match.
-        if (data) {
-          alert("Yay! You have a friend match!");
-        }
-
-        // If a friend match does not occur ... tell user they have no friend match
-        else {
-          alert("Sorry you have no friend match");
-        }
+        //display both the name and picture of the closest match.
+        $()
 
         // Clear the form when submitting
         $("#form-control").val("");
