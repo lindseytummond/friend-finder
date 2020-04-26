@@ -12,6 +12,7 @@ var friends = require("../data/friends.js");
 // ===============================================================================
 
 module.exports = function(app) {
+
   // API GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
@@ -50,10 +51,10 @@ module.exports = function(app) {
       //find differences
       const difference = 0
       for (let j = 0; j < userAnswers.length; j++) {
-        difference += Math.abs(friends[i].scores[j] - userResponses[j]);
+        difference += Math.abs(friends[i].scores[j] - userResponses[j]);  //Remember to use the absolute value of the differences.
       } 
 
-      //find match based on lowest difference
+      //The closest match will be the user with the least amount of difference.
         if (difference < totalDifference){
           totalDifference = difference
           matchName = friends[i].name
