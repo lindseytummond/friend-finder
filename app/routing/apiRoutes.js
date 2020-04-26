@@ -47,23 +47,21 @@ module.exports = function(app) {
     var totalDifference = 1000
 
     //loop thru friends list
-    for (let i = 0; i < friends.length; i++) {
+    for (var i = 0; i < friends.length; i++) {
       //find differences
-      const difference = 0
-      for (let j = 0; j < userAnswers.length; j++) {
-        difference += Math.abs(friends[i].scores[j] - userResponses[j]);  //Remember to use the absolute value of the differences.
+      var difference = 0
+      for (var j = 0; j < userAnswers.length; j++) {
+        //The Math.abs() function returns the absolute value of a number, that is. Math.abs 
+        difference += Math.abs(friends[i].scores[j] - userAnswers[j]);  //Remember to use the absolute value of the differences.
       } 
 
       //The closest match will be the user with the least amount of difference.
-        if (difference < totalDifference){
+        if (difference < totalDifference) {
           totalDifference = difference
           matchName = friends[i].name
           matchImage = friends[i].photo
         }
 
-        //push new user
-        friends.push(userInput)
-        res.json({ok: true})
     }
     
     //push new user
