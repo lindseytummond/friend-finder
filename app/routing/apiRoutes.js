@@ -57,6 +57,7 @@ module.exports = function(app) {
         //The Math.abs() function returns the absolute value of a number, that is. Math.abs 
         console.log(friends[i].scores[j])
         console.log(userAnswers[j])
+        
         difference += Math.abs(friends[i].scores[j] - userAnswers[j]);  //Remember to use the absolute value of the differences.
       } 
       console.log(difference)
