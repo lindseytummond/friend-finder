@@ -39,22 +39,28 @@ module.exports = function(app) {
 
     // req.body is available since we're using the body parsing middleware
     var userInput = req.body
+    console.log(req.body)
     var userAnswers = userInput.scores
 
     //find match
     var matchName = ''
     var matchImage = ''
     var totalDifference = 1000
+    // var matchedFriend = {}
 
     //loop thru friends list
     for (var i = 0; i < friends.length; i++) {
+      console.log(friends[i].name)
       //find differences
       var difference = 0
       for (var j = 0; j < userAnswers.length; j++) {
         //The Math.abs() function returns the absolute value of a number, that is. Math.abs 
+        console.log(friends[i].scores[j])
+        console.log(userAnswers[j])
         difference += Math.abs(friends[i].scores[j] - userAnswers[j]);  //Remember to use the absolute value of the differences.
       } 
-
+      console.log(difference)
+      console.log(userAnswers)
       //The closest match will be the user with the least amount of difference.
         if (difference < totalDifference) {
           totalDifference = difference
@@ -63,10 +69,10 @@ module.exports = function(app) {
         }
 
     }
-    
+    // matchedFriend={name: matchName, photo: matchImage}
     //push new user
     friends.push(userInput)
-    res.json({ok: true})
+    res.json({matchName: matchName, matchImage: matchImage})
 
   });
 

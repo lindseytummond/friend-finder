@@ -9,31 +9,31 @@ var friendArray = [
     {
       name: "Homer Simpson",
       photo: "https://imgur.com/a/1rzqB6p",
-      scores: [5,5,5,5,3,4,3,5,5,5],
+      scores: [5,5,5,5,5,5,5,5,5,5],
       
     },
     {
         name: "Marge Simpson",
         photo: "https://imgur.com/a29kEUM",
-        scores: [2,3,1,5,5,3,5,3,2,5],
+        scores: [4,4,4,4,4,4,4,4,4,4],
         
       },
       {
         name: "Bart Simpson",
         photo: "https://imgur.com/xHUbuVh",
-        scores: [1,4,5,3,3,4,3,5,2,3],
+        scores: [3,3,3,3,3,3,3,3,3,3],
         
       },
       {
         name: "Lisa Simpson",
         photo: "https://imgur.com/UX2HrBb",
-        scores: [1,2,3,5,3,3,5,3,2,5],
+        scores: [2,2,2,2,2,2,2,2,2,2],
         
       },
       {
         name: "Maggie Simpson",
-        photo: "https://imgur.com/A6PCSxL",
-        scores: [3,3,2,4,2,3,5,3,3,3],
+        photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG96.png",
+        scores: [1,1,1,1,1,1,1,1,1,1],
         
       }
   ];
