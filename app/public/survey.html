@@ -321,7 +321,8 @@
                 </div>
                 <br>
                 
-                <button type="submit" class="btn btn-primary" id="submitBtn">SUBMIT</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
             </form>
         </div>
          
@@ -329,24 +330,24 @@
     </div>
     <br>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>The Simpson's Friend Finder Match</h2>
-        </div>
-        <div class="modal-body">
-          <h6 id="userMatch"></h6>
-          <img id="userMatchImage" width="500" src="" alt="placeholder">
-        </div>
-        <div class="modal-footer">
-          <h3>Thanks for using The Simpson's Friend Finder!</h3>
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Your Simpson's Character Friend Match</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
-    
     </div>
 
     <!-- footer links -->
@@ -359,42 +360,12 @@
 
   </div>
 
-  <!-- modal pop up -->
-  <script type="text/javascript">
-
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // // Get the button that opens the modal
-  var btn = document.getElementById("submitBtn");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-
-  // <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
-    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+  <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+    <!-- // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
     // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
     // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
-
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file -->
+    <script type="text/javascript">
     $("#submitBtn").on("click", function(event) {
       event.preventDefault();
 
