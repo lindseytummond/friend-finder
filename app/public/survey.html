@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" text="text/css" href="/app/assets/css/style.css">
+  <link rel="stylesheet" text="text/css" href="./assets/css/style.css">
   <link rel="icon" type="image/png" href="./assets/images/pointing-homer.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
@@ -18,22 +18,26 @@
 
 <body id="survey">
 
-  <div class="container">
+  
 
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-fire"></span>The Simpson's Friend Finder Quiz</h1>
+    <div class="jumbotron" id="jsurvey">
+      <img src="./assets/images/simpsons-logo.png" id="logo" alt="simpsons-logo">
+      <h1 class="text-center">Friend Finder Quiz</h1>
       <hr>
+      <h2 class="text-center">Complete the About You and Questions to find your Simpson's character with the greatest compatibility!</h2>
+      <br>
+      <a href="/api/friends" target="-blank">API Friends List</a> | <a href="https://github.com/lindseytummond/friend-finder" target="_blank">GitHub Repo</a>
     </div>
 
     <div class="row">
       <div class="col-lg-12">
 
         <!-- About You -->
-        <div class="card">
-          <div class="card-header">
+        <div class="card" id="about">
+          <div class="card-header" id="about-header">
             <h4>About You</h4>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="about-body">
             <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="font-weight-bold">Name (required)</label>
@@ -49,10 +53,10 @@
 
         <!-- Questions -->
         <div class="card mt-4">
-          <div class="card-header">
+          <div class="card-header" id="q-header">
             <h4>Questions</h4>
-        </div>
-        <div class="card-body">
+          </div>
+          <div class="card-body" id="q-body">
             <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="font-weight-bold">#1: Do you follow your brain more than your heart?</label>
@@ -187,7 +191,7 @@
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" id="submitBtn" data-toggle="modal" data-target="#exampleModal">Submit</button>
             </form>
-        </div>
+          </div>
          
       
     </div>
@@ -215,16 +219,6 @@
         </div>
       </div>
     </div>
-
-    <!-- footer links -->
-    <br><br>
-    <footer class="footer">
-        <div class="container">
-          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/lindseytummond/friend-finder" tarbget="_blank">GitHub Repo</a>
-        </div>
-    </footer>
-
-  </div>
 
   <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
     <!-- // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
