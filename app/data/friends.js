@@ -8,32 +8,32 @@
 var friendArray = [
     {
       name: "Homer Simpson",
-      photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG80.png",
-      scores: [5,5,5,5,5,5,5,5,5,5],
+      photo: "https://media.giphy.com/media/xT5LMHxhOfscxPfIfm/giphy.gif",
+      scores: [1,3,1,5,1,2,3,5,3,5],
       
     },
     {
         name: "Marge Simpson",
-        photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG56.png",
-        scores: [4,4,4,4,4,4,4,4,4,4],
+        photo: "https://media.giphy.com/media/11mTYesz11OGxW/giphy.gif",
+        scores: [2,3,1,5,5,3,5,3,5,5],
         
       },
       {
         name: "Bart Simpson",
-        photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG78.png",
-        scores: [3,3,3,3,3,3,3,3,3,3],
+        photo: "https://media.giphy.com/media/xT5LMzWVNsfgu6srOU/giphy.gif",
+        scores: [4,5,5,1,1,3,1,1,2,1],
         
       },
       {
         name: "Lisa Simpson",
-        photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG64.png",
-        scores: [2,2,2,2,2,2,2,2,2,2],
+        photo: "https://media.giphy.com/media/l2Je53EP800isL9fO/giphy.gif",
+        scores: [5,5,5,3,5,3,5,5,5,5],
         
       },
       {
         name: "Maggie Simpson",
-        photo: "http://pngimg.com/uploads/simpsons/simpsons_PNG55.png",
-        scores: [1,1,1,1,1,1,1,1,1,1],
+        photo: "https://media.giphy.com/media/s6EYTqTRqujIY/giphy.gif",
+        scores: [1,1,1,1,1,3,1,1,1,1],
         
       }
   ];
