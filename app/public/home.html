@@ -7,33 +7,31 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" text="text/css" href="/app/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/app/assets/images/homer.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="home">
 
-  <div class="container">
-
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-facebook-square"></span> The Simpson's Friend Finder</h1>
+    <div class="jumbotron" id="jhome">
+      <img src="/app/assets/images/simpsons-logo.png" id="logo" alt="simpsons-logo">
+      <h1 class="text-center">Friend Finder</h1>
       <hr>
       <h2 class="text-center">Answer a few basic questions. <br> Find your Simpson's character with the greatest compatibility!</h2>
-      <br>
+      <br><br>
 
       <div class="text-center">
-        <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Go to Survey</button></a>
-        
+        <a href="/survey"><button class="btn btn-lg btn-primary">Go to Quiz!</button></a>
       </div>
 
+      <br>
+      
+
+      <footer class="footer">
+        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/lindseytummond/friend-finder" target="_blank">GitHub Repo</a> 
+      </footer>
     </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="placeholder">GitHub Repo</a>
-      </div>
-    </footer>
-
-  </div>
-
 
 </body>
 </html>
