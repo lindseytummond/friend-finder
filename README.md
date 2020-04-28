@@ -25,5 +25,5 @@ Complete the quiz questions to prompt the modal to populate with the Simpson's c
 ## App Example:
 
 <a href="https://friend-finder-tummond.herokuapp.com/" target="_blank">
-   <img src="./assets/images/friend-finder.png">
+   <img src="assets/images/friend-finder.png">
 </a>
