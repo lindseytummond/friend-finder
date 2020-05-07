@@ -31,7 +31,7 @@ Future developments would include creating additional matching characters and di
 -   Heroku
 
 ## How to Use:
-Use the following link `https://friend-finder-tummond.herokuapp.com/` to open the application and select the 'Go to Quiz' button. <br>
+Use the following link https://friend-finder-tummond.herokuapp.com/ to open the application and select the 'Go to Quiz' button. <br>
 Complete the quiz questions to prompt the modal to populate with the Simpson's character you have the most compatability.
 
 ## App Example:
