@@ -41,5 +41,5 @@ Complete the quiz questions to prompt the modal to populate with the Simpson's c
 </a> -->
 
 <p align="center">
-  <img src="public/assets/images/friend-finder-readme.gif">
+  <img src="../public/assets/images/friend-finder-readme.gif">
 </p>
