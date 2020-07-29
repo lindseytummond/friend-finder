@@ -35,7 +35,11 @@ Use the following link https://friend-finder-tummond.herokuapp.com/ to open the 
 Complete the quiz questions to prompt the modal to populate with the Simpson's character you have the most compatability.
 
 ## App Example:
-
+<!-- 
 <a href="https://friend-finder-tummond.herokuapp.com/" target="_blank">
    <img src="app/public/assets/images/friend-finder.png">
-</a>
+</a> -->
+
+<p align="center">
+  <img src="public/assets/images/friend-finder-readme.gif">
+</p>
